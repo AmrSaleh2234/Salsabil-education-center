@@ -93,11 +93,11 @@
 		      <div class="col-md-12">
 			     <div class="tab_menu  ">
 				    <ul class="d-flex justify-content-end">
-					   <li><a href="#"><span class="icon"><img src="images/i2.png" alt="#" /></span><span>Graduation</span></a></li>
-					   <li><a href="#"><span class="icon"><img src="images/i4.png" alt="#" /></span><span>Social</span></a></li>
-					   <li><a href="#"><span class="icon"><img src="images/i5.png" alt="#" /></span><span>Location</span></a></li>
-					   <li><a href="#"><span class="icon"><img src="images/i6.png" alt="#" /></span><span> Email</span></a></li>
-					   <li><a href="#"><span class="icon"><img src="images/i7.png" alt="#" /></span><span>Call us</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="{{URL::asset('images/i2.png')}}" alt="#" /></span><span>Graduation</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="{{URL::asset('images/i4.png')}}" alt="#" /></span><span>Social</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="{{URL::asset('images/i5.png')}}" alt="#" /></span><span>Location</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="{{URL::asset('images/i6.png')}}" alt="#" /></span><span> Email</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="{{URL::asset('images/i7.png')}}" alt="#" /></span><span>Call us</span></a></li>
 					</ul>
 				 </div>
 			  </div>
@@ -124,7 +124,7 @@
                 </div>
 				<div class="col-md-6 ">
                     <div class="full " style="margin-top: 85px">
-                        <img src="images/img2.png" alt="#" />
+                        <img src="{{URL::asset('images/img2.png')}}" alt="#" />
                     </div>
                 </div>
             </div>
@@ -144,19 +144,19 @@
                 </div>
 				<div class="col-md-4">
                     <div class="full blog_img_popular">
-                       <img class="img-responsive" src="images/p3.png" alt="#" style="height: auto" />
+                       <img class="img-responsive" src="{{URL::asset('images/p3.png"')}} alt="#" style="height: auto" />
 					   <h4>الصف الاول الثانوي</h4>
                     </div>
                 </div>
 				<div class="col-md-4">
                     <div class="full blog_img_popular">
-                        <img class="img-responsive" src="images/study.jpg" alt="#" style="height: 240px" />
+                        <img class="img-responsive" src="{{URL::asset('images/study.jpg')}}" alt="#" style="height: 240px" />
                         <h4>الصف الثاني الثانوي</h4>
                     </div>
                 </div>
 				<div class="col-md-4">
                     <div class="full blog_img_popular">
-                        <img class="img-responsive" src="images/p1.png" alt="#" style="height: auto" />
+                        <img class="img-responsive" src="{{URL::asset('images/p1.png')}}" alt="#" style="height: auto" />
                         <h4>الصف الثالث الثانوي</h4>
                     </div>
                 </div>
@@ -187,14 +187,14 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12">
 									   <div class="full blog_img_popular">
-                                          <img class="img-responsive" src="images/magdyAbdElgany.jpg" alt="#" />
+                                          <img class="img-responsive" src="{{URL::asset('images/magdyAbdElgany.jpg')}}" alt="#" />
 										  <h4>هير / مجدي عبد الغني</h4>
 										  <p>اشهر معلم لغة ألمانيه في مصر اضمن الدرجة النهائية  </p>
 										</div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="full blog_img_popular">
-                                          <img class="img-responsive" src="images/minaemad.jpg" alt="#" />
+                                          <img class="img-responsive" src="{{URL::asset('images/minaemad.jpg')}}" alt="#" />
 										  <h4>هير / مينا عماد </h4>
                                             <p>اشهر معلم لغة ألمانيه في مصر اضمن الدرجة النهائية </p>
 										</div>
@@ -205,14 +205,14 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12">
 									   <div class="full blog_img_popular">
-                                          <img class="img-responsive" src="images/husseinsalem.jpg" alt="#" />
+                                          <img class="img-responsive" src="{{URL::asset('images/husseinsalem.jpg')}}" alt="#" />
 										  <h4>مستر/ حسين سالم</h4>
 										  <p>استمتع بشرح النحو بأسهل طريقة واحفظ القراءة بمنتهي السهولة</p>
 										</div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="full blog_img_popular">
-                                          <img class="img-responsive" src="images/omarelshar.jpg" alt="#" />
+                                          <img class="img-responsive" src="{{URL::asset('images/omarelshar.jpg')}}" alt="#" />
 										  <h4>مستر / عمر الشاعر</h4>
                                             <p>استمتع بشرح النحو بأسهل طريقة واحفظ القراءة بمنتهي السهولة</p>
 										</div>
@@ -257,7 +257,7 @@
                <div class="row">
                  <div class="col-lg-6 col-md-6 col-sm-12">
 				    <div class="full float-right_img">
-                        <img src="images/img10.png" alt="#">
+                        <img src="{{URL::asset('images/img10.png')}}" alt="#">
                     </div>
                  </div>
 				 <div class="layout_padding col-lg-6 col-md-6 col-sm-12">

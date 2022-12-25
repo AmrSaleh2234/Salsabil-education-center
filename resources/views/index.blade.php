@@ -6,7 +6,7 @@
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
-            <img src="images/loader.gif" alt="#" />
+            <img src="{{URL::asset('images/loader.gif')}}" alt="#" />
         </div>
     </div>
     <!-- end loader -->
@@ -16,7 +16,7 @@
     <header class="top-header rtl" >
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{route('landpage')}}"><img src="images/logo.png" alt="image"></a>
+                <a class="navbar-brand" href="{{route('landpage')}}"><img src="{{URL::asset(images/logo.png'')}}" alt="image"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -33,7 +33,7 @@
                 <div class="search-box">
                     <input type="text" class="search-txt" placeholder="Search">
                     <a class="search-btn">
-                        <img src="images/search_icon.png" alt="#" />
+                        <img src="{{URL::asset('images/search_icon.png')}}" alt="#" />
                     </a>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider rtl" id="js-main-slider">
-                    <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url({{URL::asset('images/banner_img.png')}});">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -63,7 +63,7 @@
                         </div>
                     </div>
 
-                    <div class="pogoSlider-slide" style="background-image:url(images/ban.webp)">
+                    <div class="pogoSlider-slide" style="background-image:url({{URL::asset('images/ban.webp')}})">
 
                         <div class="container">
                             <div class="row">

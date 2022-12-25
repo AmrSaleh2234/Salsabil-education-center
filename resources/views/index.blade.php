@@ -145,7 +145,7 @@
                 </div>
 				<div class="col-md-4">
                     <div class="full blog_img_popular">
-                       <img class="img-responsive" src="{{URL::asset('images/p3.png"')}}" alt="#" style="height: auto" />
+                       <img class="img-responsive" src="{{URL::asset('images/p3.png')}}" alt="#" style="height: auto" />
 					   <h4>الصف الاول الثانوي</h4>
                     </div>
                 </div>

@@ -160,6 +160,7 @@ a.navbar-brand img {
 	.tab_menu {
     overflow-y: hidden !important;
     padding: 0 30px;
+
 }
 
 .blog_img_popular h4 {
@@ -243,6 +244,7 @@ a.navbar-brand img {
 
 .tab_menu {
   padding: 0 13px;
+    display: none;
 }
 
 	p.section_count {
@@ -294,11 +296,12 @@ a.navbar-brand img {
      .search-box {
          position: absolute;
          top: 0;
-         right: 50px;
+         left: 50px;
          height: auto;
          padding: 0;
          margin-top: 29px;
          display: none;
+
     }
      a.navbar-brand {
          left: 0;
@@ -308,8 +311,9 @@ a.navbar-brand img {
          margin-top: 10%;
 
     }
-     .slide_text h3 {
-         font-size: 20px;
+     .slide_text h3 , .slide_text h3 span {
+         font-size: 22px !important;
+         line-height: 22px !important;
     }
      .slide_text h4 {
          font-size: 16px;
@@ -417,5 +421,8 @@ a.navbar-brand img {
 	.newsletter_form input {
          width: 100%;
     }
+     .pogoSlider--navBottom .pogoSlider-nav{
+         bottom: 8px ;
+     }
 
 }

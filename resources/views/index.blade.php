@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    الصفحة الرئيسية
+    مركز سلسبيل التعليمي
 @endsection
 @section('content')
     <!-- LOADER -->

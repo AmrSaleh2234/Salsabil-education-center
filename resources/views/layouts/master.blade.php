@@ -13,6 +13,8 @@
     <title>@yield('title')</title>
     <meta name="keywords" content="سنتر سلسبيل التعليمي , مركز سلسبيل , مركز سلسبيل التعليمي , سنتر سلسبيل ">
     <meta name="description" content="سنتر سلسبيل التعليمي يضم مدرسين خبرة في كل المواد ">
+
+
     <meta name="author" content="ِAmr Saleh">
 
     <!-- Site Icons -->

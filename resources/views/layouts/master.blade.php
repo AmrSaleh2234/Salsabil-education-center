@@ -11,9 +11,9 @@
 
     <!-- Site Metas -->
     <title>@yield('title')</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="سنتر سلسبيل التعليمي , مركز سلسبيل , مركز سلسبيل التعليمي , سنتر سلسبيل ">
+    <meta name="description" content="سنتر سلسبيل التعليمي يضم مدرسين خبرة في كل المواد ">
+    <meta name="author" content="ِAmr Saleh">
 
     <!-- Site Icons -->
     <link rel="apple-touch-icon" href="#" />

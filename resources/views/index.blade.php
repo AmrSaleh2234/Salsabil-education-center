@@ -49,6 +49,24 @@
                 <div class="pogoSlider rtl" id="js-main-slider">
 
 
+                    <div class="pogoSlider-slide" style="background-image:url({{URL::asset('images/banner_img.png')}});">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                        <h3><span  class="theme_color">سنتر سلسبيل التعليمي</span><br>هو افضل مركز تعليمي في السلام</h3>
+                                        <h4>يضم اشهر المعلمين  في جميع المراحل التعليميه</h4>
+                                        <br>
+                                        <div class="full center">
+                                            <a class="contact_bt" href="#subjects">ابدا معنا</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="pogoSlider-slide" style="background-image:url({{URL::asset('images/ban.webp')}})">
 
                         <div class="container">
@@ -57,23 +75,6 @@
                                     <div class="slide_text">
                                         <h3><span  class="theme_color">يجب ان تعلم شئ واحد</span><br>انك تستطيع ان تتعلم اي شئ</h3>
                                         <h4>معنا التعليم ممتع</h4>
-                                        <br>
-                                        <div class="full center">
-										    <a class="contact_bt" href="#subjects">ابدا معنا</a>
-										</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pogoSlider-slide" style="background-image:url({{URL::asset('images/banner_img.png')}});">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="slide_text">
-                                        <h3><span  class="theme_color">سنتر سلسبيل التعليمي</span><br>هو افضل مركز تعليمي في السلام</h3>
-                                        <h4>يضم اشهر المعلمين  في جميع المراحل التعليميه</h4>
                                         <br>
                                         <div class="full center">
                                             <a class="contact_bt" href="#subjects">ابدا معنا</a>

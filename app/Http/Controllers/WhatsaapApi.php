@@ -20,17 +20,16 @@ class WhatsaapApi extends Controller
     public function sendWelcomeMessage()
     {
 
-        //$data=[ "messaging_product"=> "whatsapp", "to"=> "201285323276", "type"=> "template", "template"=> [ "name"=> "hello_world", "language"=> [ "code"=> "en_US" ] ] ];
-
-
+//        //$data=[ "messaging_product"=> "whatsapp", "to"=> "201285323276", "type"=> "template", "template"=> [ "name"=> "hello_world", "language"=> [ "code"=> "en_US" ] ] ];
 //        curl -i -X POST `
 //  https://graph.facebook.com/v15.0/111055818557737/messages `
-//    -H 'Authorization: Bearer EAArEMtUmbLIBALDezUkYfNpjU1dMb7FckeQ8BFjmWm3p1rZBGEPYj6tmyjftjiFZC5a56HOjdjhsjrZAxgPDuBvbeyp9Okv3hrv9oZAhjwOBEvRMZBRJ9PpsFeRNzdWg0oiZC1zAbX2rr2kYFgRZCRzHygXVZAkeRpjrQLJL2kFMPfsTPCcYwNEMrw7vReEGvUo0LkMr7VDJCQZDZD' `
+//    -H 'Authorization: Bearer EAArEMtUmbLIBALvX3SibXhRjdLIquHUN06c7QM4fctTRcamAQ1KVBGa8RFT9b4C0i1vAZAIXpmzb6zZBTxGZCiykG8vi2aPfw04fJkNZAjFjsTd7B12nOJz8B45cpM4pL9H0JDnfi7jzORkAXCmEkIxd3IdGGkNO0xfZBzy7FAbZC1nVh0RZCddDZCjPjwHwZANAdSbXZCYhp2gAZDZD' `
 //  -H 'Content-Type: application/json' `
-//    -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"201068936737\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
+//    -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"962777717245\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
+
         $data = [
             "messaging_product" => "whatsapp",
-            "to" => "201068936737",
+            "to" => "962777717245",
             "text" => [
                 "body" => "hello world fggsd8tv  knlsdajj jkbdsauh jkhbasidhadsiou!"
             ]
@@ -101,13 +100,13 @@ class WhatsaapApi extends Controller
 //        }
 //    ]
 //}
-        test::create(['object'=>'sended']);
+        test::create(['object'=>'']);
 //        $phone_no_id=$request->body
         $data = [
             "messaging_product" => "whatsapp",
-            "to" => "201068936737",
+            "to" => "962777717245",
             "text" => [
-                "body" => "good morning!"
+                "body" => "response message good morning!"
             ]
         ];
         $respose = Http::withHeaders([

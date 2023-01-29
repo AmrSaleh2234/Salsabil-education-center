@@ -60,19 +60,19 @@ class WhatsaapApi extends Controller
 
     }
     public function recieveWelcomeMessage(Request $request){
-        test::create(['object'=>'sended']);
+//        test::create(['object'=>'sended']);
 //        $phone_no_id=$request->body
-//        $data = [
-//            "messaging_product" => "whatsapp",
-//            "to" => "201285323276",
-//            "text" => [
-//                "body" => "good morning!"
-//            ]
-//        ];
-//        $respose = Http::withHeaders([
-//            'Authorization' => $this->token,
-//            'Content-Type' => 'application/json'
-//        ])->withBody(json_encode($data), 'application/json')->post($this->url);
+        $data = [
+            "messaging_product" => "whatsapp",
+            "to" => "201285323276",
+            "text" => [
+                "body" => "good morning!"
+            ]
+        ];
+        $respose = Http::withHeaders([
+            'Authorization' => $this->token,
+            'Content-Type' => 'application/json'
+        ])->withBody(json_encode($data), 'application/json')->post($this->url);
         return response()->status(200);
 
     }

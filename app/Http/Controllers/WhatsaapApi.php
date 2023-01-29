@@ -27,7 +27,7 @@ class WhatsaapApi extends Controller
 
         $data = [
             "messaging_product" => "whatsapp",
-            "to" => "201285323276",
+            "to" => "201068936737",
             "text" => [
                 "body" => "hello world fggsd8tv  knlsdajj jkbdsauh jkhbasidhadsiou!"
             ]
@@ -60,7 +60,7 @@ class WhatsaapApi extends Controller
 //        $phone_no_id=$request->body
         $data = [
             "messaging_product" => "whatsapp",
-            "to" => "201285323276",
+            "to" => "201068936737",
             "text" => [
                 "body" => "good morning!"
             ]

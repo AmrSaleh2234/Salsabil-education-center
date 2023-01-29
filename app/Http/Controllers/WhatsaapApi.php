@@ -57,11 +57,12 @@ class WhatsaapApi extends Controller
 
     }
     public function recieveWelcomeMessage(Request $request){
+//        $phone_no_id=$request->body
         $data = [
             "messaging_product" => "whatsapp",
             "to" => "201285323276",
             "text" => [
-                "body" => "hello world fggsd8tv  knlsdajj jkbdsauh jkhbasidhadsiou!"
+                "body" => "good morning!"
             ]
         ];
         $respose = Http::withHeaders([

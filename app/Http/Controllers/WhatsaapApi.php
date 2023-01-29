@@ -19,6 +19,7 @@ class WhatsaapApi extends Controller
 
     public function sendWelcomeMessage()
     {
+        test::create(['object'=>'sended']);
         //$data=[ "messaging_product"=> "whatsapp", "to"=> "201285323276", "type"=> "template", "template"=> [ "name"=> "hello_world", "language"=> [ "code"=> "en_US" ] ] ];
 
 
@@ -59,7 +60,7 @@ class WhatsaapApi extends Controller
 
     }
     public function recieveWelcomeMessage(Request $request){
-//        test::create(['object'=>'sended']);
+//
 //        $phone_no_id=$request->body
         $data = [
             "messaging_product" => "whatsapp",

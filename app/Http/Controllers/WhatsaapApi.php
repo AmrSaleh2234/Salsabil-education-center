@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\test;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -19,12 +20,13 @@ class WhatsaapApi extends Controller
     public function sendWelcomeMessage()
     {
         //$data=[ "messaging_product"=> "whatsapp", "to"=> "201285323276", "type"=> "template", "template"=> [ "name"=> "hello_world", "language"=> [ "code"=> "en_US" ] ] ];
-//        curl -i -X POST `
-//
-//    -H 'Authorization: Bearer EAArEMtUmbLIBAMiSO11mZAGIgqrON9w4bZBZBZCDcO3oVVqvghMdM11RD2RZA7b9ZCR3pXZCOyB4y67ig5VmZBoBm3d02148ktQrSUeNup922kygiNaWwHKroTvkTDZAkeIzroZCMzOOR5HZAKsO4KpUBjPZB5c15Jp7zKLBgSD0O5hSrHBUmeV4IZCiTwv5uiZCZCnZAjZBZCWmFee4XI8QZDZD' `
-//  -H 'Content-Type: application/json' `
-//    -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"201285323276\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
 
+
+//        curl -i -X POST `
+//  https://graph.facebook.com/v15.0/111055818557737/messages `
+//    -H 'Authorization: Bearer EAArEMtUmbLIBALDezUkYfNpjU1dMb7FckeQ8BFjmWm3p1rZBGEPYj6tmyjftjiFZC5a56HOjdjhsjrZAxgPDuBvbeyp9Okv3hrv9oZAhjwOBEvRMZBRJ9PpsFeRNzdWg0oiZC1zAbX2rr2kYFgRZCRzHygXVZAkeRpjrQLJL2kFMPfsTPCcYwNEMrw7vReEGvUo0LkMr7VDJCQZDZD' `
+//  -H 'Content-Type: application/json' `
+//    -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"201068936737\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
         $data = [
             "messaging_product" => "whatsapp",
             "to" => "201068936737",
@@ -57,6 +59,7 @@ class WhatsaapApi extends Controller
 
     }
     public function recieveWelcomeMessage(Request $request){
+        test::create(['objetc'=>'sended']);
 //        $phone_no_id=$request->body
         $data = [
             "messaging_product" => "whatsapp",

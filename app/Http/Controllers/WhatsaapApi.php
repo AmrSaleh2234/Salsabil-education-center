@@ -57,6 +57,7 @@ class WhatsaapApi extends Controller
 
     }
     public function recieveWelcomeMessage(Request $request){
+        $this->sendWelcomeMessage();
         return response($request,200);
     }
 }

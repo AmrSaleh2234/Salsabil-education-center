@@ -68,6 +68,7 @@ class WhatsaapApi extends Controller
             'Authorization' => $this->token,
             'Content-Type' => 'application/json'
         ])->withBody(json_encode($data), 'application/json')->post($this->url);
-        return response($request,200);
+        return response()->status(200);
+
     }
 }

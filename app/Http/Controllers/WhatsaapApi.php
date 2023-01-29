@@ -48,10 +48,10 @@ class WhatsaapApi extends Controller
         test::create(['object'=>'sended']);
         $mode=$request->input("hub_mode");
         $challenge=$request->input("hub_challenge");
-        $token=$request->input("hub_verify_token");
+        $tok=$request->input("hub_verify_token");
         $mytoken = "prasath";
-        if($mode && $token){
-            if($mode=="subscribe" && $token == $mytoken){
+        if($mode && $tok){
+            if($mode=="subscribe" && $tok == $mytoken){
                 return response($challenge,200);
             }
             else{

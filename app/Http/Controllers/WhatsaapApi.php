@@ -45,6 +45,7 @@ class WhatsaapApi extends Controller
 
     public function recieve(Request $request)
     {
+        test::create(['object'=>'sended']);
         $mode=$request->input("hub_mode");
         $challenge=$request->input("hub_challenge");
         $token=$request->input("hub_verify_token");

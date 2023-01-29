@@ -61,7 +61,7 @@ class WhatsaapApi extends Controller
 
     }
     public function recieveWelcomeMessage(Request $request){
-        test::create(['object'=>json_decode($request)]);
+
 
 //        test::create(['object'=>'sended']);
 //        $phone_no_id=$request->body

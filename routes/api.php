@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/whatsaapsend',[\App\Http\Controllers\WhatsaapApi::class,'sendWelcomeMessage']);
-Route::any('/whatsaaprecieve',[\App\Http\Controllers\WhatsaapApi::class,'recieveWelcomeMessage']);
+Route::get('/whatsaaprecieve',[\App\Http\Controllers\WhatsaapApi::class,'recieve']);
+Route::post('/whatsaaprecieve',[\App\Http\Controllers\WhatsaapApi::class,'recieveWelcomeMessage']);

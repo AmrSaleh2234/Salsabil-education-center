@@ -39,6 +39,23 @@ class WhatsaapApi extends Controller
 
         return response($respose);
     }
+
+    public function recieve(Request $request)
+    {
+        $mode=$request->input("hub.mode");
+        $challenge=$request->input("hub.challenge");
+        $token=$request->input("hub.verify_token");
+        $mytoken = "prasath";
+        if($mode && $token){
+            if($mode==="subscribe" && $token === $mytoken){
+                return response($challenge,200);
+            }
+            else{
+                return response()->status(403);
+            }
+        }
+
+    }
     public function recieveWelcomeMessage(Request $request){
         return response()->json($request);
     }

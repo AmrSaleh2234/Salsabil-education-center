@@ -10,11 +10,13 @@ class WhatsaapApi extends Controller
 {
     public $url;
     public $token;
+    public $mobile;
 
     public function __construct()
     {
         $this->url = env('WHATSAPP_URL');
         $this->token = env('WHATSAPP_TOKEN');
+        $this->mobile = env('WHATSAPP_SEND_MOBILE');
     }
 
     public function sendWelcomeMessage()
@@ -29,7 +31,7 @@ class WhatsaapApi extends Controller
 
         $data = [
             "messaging_product" => "whatsapp",
-            "to" => "201285323276",//962777717245
+            "to" => $this->mobile,//962777717245
             "text" => [
                 "body" => "hello world fggsd8tv  knlsdajj jkbdsauh jkhbasidhadsiou!"
             ]
@@ -64,20 +66,17 @@ class WhatsaapApi extends Controller
 
 
         test::create(['object'=>'good']);
-//        $phone_no_id=$request->body
-
-//
-
 
         $recieve=file_get_contents("php://input");
-//        if($recieve==null){
-//            exit;
-//        }
+        if($recieve==null){
+            exit;
+        }
         $recieve = json_decode($recieve,true);
         $message= $recieve['entry'][0]['changes'][0]['value']['messages'][0]['text']['body'];
+        $mobile= $recieve['entry'][0]['changes'][0]['value']['messages'][0]['from'];
         $data = [
             "messaging_product" => "whatsapp",
-            "to" => "201285323276",
+            "to" => $mobile,
             "text" => [
                 "body" => $message
             ]

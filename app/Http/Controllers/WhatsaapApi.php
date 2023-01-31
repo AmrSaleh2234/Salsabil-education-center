@@ -59,7 +59,7 @@ class WhatsaapApi extends Controller
         }
 
     }
-    public function recieveWelcomeMessage(Request $request){
+    public function recieveWelcomeMessage(){
 
             //        {
 //            "object": "whatsapp_business_account",
@@ -102,18 +102,27 @@ class WhatsaapApi extends Controller
 //}
         test::create(['object'=>'good']);
 //        $phone_no_id=$request->body
+
+//
+
+
+        $recieve=file_get_contents("php://input");
+        if($recieve==null){
+            exit;
+        }
+        $recieve = json_decode($recieve,true);
+        $message= $recieve['entry'][0]['changes'][0]['value']['messages'][0]['text']['body'];
         $data = [
             "messaging_product" => "whatsapp",
             "to" => "201285323276",
             "text" => [
-                "body" => "response message good morning!"
+                "body" => $message
             ]
         ];
-        $respose = Http::withHeaders([
+        $response = Http::withHeaders([
             'Authorization' => $this->token,
             'Content-Type' => 'application/json'
         ])->withBody(json_encode($data), 'application/json')->post($this->url);
-        return response($request,200);
-
+        return response($response,200);
     }
 }
